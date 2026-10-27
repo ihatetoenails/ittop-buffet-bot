@@ -1,0 +1,7 @@
+node_modules/
+.env
+data/admin_chats.json
+data/anchors.json
+*.log
+.DS_Store
+.pm2/

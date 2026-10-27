@@ -1,0 +1,24 @@
+{
+  "name": "ittop-buffet-bot",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "pm2:start": "pm2 start ecosystem.config.cjs",
+    "pm2:stop": "pm2 stop ittop-buffet-bot",
+    "pm2:restart": "pm2 restart ittop-buffet-bot",
+    "pm2:logs": "pm2 logs ittop-buffet-bot"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "grammy": "^1.35.0"
+  },
+  "devDependencies": {
+    "pm2": "^7.1.1"
+  },
+  "allowScripts": {
+    "ssh2@1.17.0": true
+  }
+}
